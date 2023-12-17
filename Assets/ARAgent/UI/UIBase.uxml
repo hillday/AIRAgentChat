@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/ARAgent/UI/Uss/UIBase.uss?fileID=7433441132597879392&amp;guid=2627f79b52e29814cbedda3a2ff5674b&amp;type=3#UIBase" />
+    <ui:VisualElement name="Container" style="align-items: center; justify-content: center; top: 0; position: absolute; left: 0; width: 100%; padding-left: 16px; padding-right: 16px; padding-top: 16px; padding-bottom: 16px; height: 100%;">
+        <ui:Button display-tooltip-when-elided="true" name="RecordBtn" style="align-items: center; position: absolute; bottom: 80px; width: 180px; height: 180px; justify-content: center; border-left-color: rgba(56, 56, 56, 0.04); border-right-color: rgba(56, 56, 56, 0.04); border-top-color: rgba(56, 56, 56, 0.04); border-bottom-color: rgba(56, 56, 56, 0.04); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: rgba(94, 89, 89, 0.76); color: rgb(255, 255, 255);">
+            <ui:Label text="Ask" display-tooltip-when-elided="true" name="BtnText" style="color: rgb(248, 240, 240); font-size: 50px; -unity-font-style: bold;" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>
