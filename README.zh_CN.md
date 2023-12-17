@@ -17,7 +17,7 @@
 3. Windows 11（验证过）
 ### 安装
 ```
-git clone xxxx
+git clone https://github.com/hillday/AIRAgentChat.git
 ```
 在Unity Hub中打开所在项目目录，Unity会自动创建项目和下载相关依赖包，以下是正常的开发界面。
 ![](./Images/main.png)

@@ -21,7 +21,7 @@ Most of the codes for LLM, TTS&STT come from[Unity-AI-Chat-Toolkit
 3. Windows 11 (verified)
 ### Install
 ```
-git clone xxxx
+git clone https://github.com/hillday/AIRAgentChat.git
 ```
 Open the project directory in Unity Hub. Unity will automatically create the project and download the relevant dependency packages. The following is the normal development interface.
 ![](./Images/main.png)
