@@ -81,7 +81,7 @@ LLM automatically takes photos according to the user's voice instructions. In pr
 ```
 According to the test, in most scenarios, such as asking it to take a photo or want to see the surrounding environment, it can understand and return`系统功能#F0001`。
 ### Expression animation
-Expression animation is realized through ARKit blendshapes. The ideal way is to generate dynamic expressions in real time through the voice activity blendshapes parameters, so that it will look natural when speaking. It is currently driven by fixed parameters, so it does not look very natural, and the mouth shape cannot match the changes in speech. We are developing technology to automatically generate blendshapes parameters for speech, which will be replaced after it goes online.
+Expression animation is realized through ARKit blendshapes. The ideal way is to generate dynamic expressions in real time through the voice drive blendshapes parameters, so that it will look natural when speaking. It is currently driven by fixed parameters, so it does not look very natural, and the mouth shape cannot match the changes in speech. We are developing technology to automatically generate blendshapes parameters for speech, which will be replaced after it goes online.
 ## Follow-up
 ### Function optimization
 1. Speech generation blendshapes
