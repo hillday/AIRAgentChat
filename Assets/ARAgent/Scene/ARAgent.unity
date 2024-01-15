@@ -744,6 +744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1348222841}
   - component: {fileID: 1348222842}
+  - component: {fileID: 1348222843}
   m_Layer: 0
   m_Name: ChatBaidu
   m_TagString: Untagged
@@ -783,8 +784,25 @@ MonoBehaviour:
   lan: "\u4E2D\u6587"
   m_HistoryKeepCount: 15
   m_DataList: []
-  m_Settings: {fileID: 0}
-  m_ModelType: 2
+  m_Settings: {fileID: 1348222843}
+  m_ModelType: 0
+--- !u!114 &1348222843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348222840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31310c19ff6236a408accf6c97a1832c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_API_key: 
+  m_Client_secret: 
+  m_GetTokenFromServer: 1
+  m_Token: 
+  m_AuthorizeURL: https://aip.baidubce.com/oauth/2.0/token
 --- !u!1 &1351412868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SpeechRecognizeURL: 
-  m_Settings: {fileID: 0}
+  m_Settings: {fileID: 1660307685}
 --- !u!114 &1660307684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1119,7 +1137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PostURL: 
-  m_Settings: {fileID: 0}
+  m_Settings: {fileID: 1660307685}
   m_Post_Setting:
     ctp: 1
     lan: zh

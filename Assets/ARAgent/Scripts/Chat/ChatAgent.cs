@@ -229,32 +229,32 @@ public class ChatAgent : MonoBehaviour
     [SerializeField] private VoiceInputs m_VoiceInputs;
     [SerializeField] private GameObject m_UIDocument;
 
-    private Button _voiceInputBotton;
+    private Button _voiceInputButton;
 
     private void RegistButtonEvent()
     {
         if (m_UIDocument == null) return;
         var uiDocument = m_UIDocument.GetComponent<UIDocument>();
 
-        _voiceInputBotton = uiDocument.rootVisualElement.Q("RecordBtn") as Button;
-        _voiceInputBotton.clickable.activators.Clear();
+        _voiceInputButton = uiDocument.rootVisualElement.Q("RecordBtn") as Button;
+        _voiceInputButton.clickable.activators.Clear();
 
-        _voiceInputBotton.RegisterCallback<PointerDownEvent>(StartRecord);
-        _voiceInputBotton.RegisterCallback<PointerUpEvent>(StopRecord);
+        _voiceInputButton.RegisterCallback<PointerDownEvent>(StartRecord);
+        _voiceInputButton.RegisterCallback<PointerUpEvent>(StopRecord);
 
     }
 
     private void UnRegistButtonEvent()
     {
-        _voiceInputBotton.UnregisterCallback<PointerDownEvent>(StartRecord);
-        _voiceInputBotton.UnregisterCallback<PointerUpEvent>(StopRecord);
+        _voiceInputButton.UnregisterCallback<PointerDownEvent>(StartRecord);
+        _voiceInputButton.UnregisterCallback<PointerUpEvent>(StopRecord);
 
     }
 
 
     public void StartRecord(PointerDownEvent evt)
     {
-        var label = _voiceInputBotton.Q<Label>();
+        var label = _voiceInputButton.Q<Label>();
         label.text = "...";
         Debug.Log("ChatSample: Start record voice");
         m_VoiceInputs.StartRecordAudio();
@@ -262,7 +262,7 @@ public class ChatAgent : MonoBehaviour
 
     public void StopRecord(PointerUpEvent evt)
     {
-        var label = _voiceInputBotton.Q<Label>();
+        var label = _voiceInputButton.Q<Label>();
         label.text = "Ask";
         Debug.Log("ChatSample: End record voice");
         m_VoiceInputs.StopRecordAudio(AcceptClip);
